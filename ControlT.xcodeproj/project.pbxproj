@@ -6,14 +6,101 @@
 	objectVersion = 42;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C992095E12E12E8C000DD89E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C992095D12E12E8C000DD89E /* Cocoa.framework */; };
+		C992096512E12ECA000DD89E /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C992096412E12ECA000DD89E /* Menu.xib */; };
+		C992097F12E12F5C000DD89E /* ControlT.m in Sources */ = {isa = PBXBuildFile; fileRef = C992097E12E12F5C000DD89E /* ControlT.m */; };
+		C992098812E12FE1000DD89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C992098712E12FE1000DD89E /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C992095612E12E77000DD89E /* ControlT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C992095912E12E77000DD89E /* ControlT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ControlT-Info.plist"; sourceTree = "<group>"; };
+		C992095D12E12E8C000DD89E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		C992096412E12ECA000DD89E /* Menu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
+		C992097D12E12F5C000DD89E /* ControlT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlT.h; sourceTree = "<group>"; };
+		C992097E12E12F5C000DD89E /* ControlT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlT.m; sourceTree = "<group>"; };
+		C992098712E12FE1000DD89E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C992095412E12E77000DD89E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C992095E12E12E8C000DD89E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		C992093212E12882000DD89E = {
 			isa = PBXGroup;
 			children = (
+				C992097C12E12F37000DD89E /* Classes */,
+				C992097B12E12F2D000DD89E /* Resources */,
+				C992096112E12E95000DD89E /* Frameworks */,
+				C992095712E12E77000DD89E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		C992095712E12E77000DD89E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C992095612E12E77000DD89E /* ControlT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C992096112E12E95000DD89E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C992095D12E12E8C000DD89E /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C992097B12E12F2D000DD89E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C992095912E12E77000DD89E /* ControlT-Info.plist */,
+				C992096412E12ECA000DD89E /* Menu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C992097C12E12F37000DD89E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C992098712E12FE1000DD89E /* main.m */,
+				C992097D12E12F5C000DD89E /* ControlT.h */,
+				C992097E12E12F5C000DD89E /* ControlT.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C992095512E12E77000DD89E /* ControlT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C992095C12E12E78000DD89E /* Build configuration list for PBXNativeTarget "ControlT" */;
+			buildPhases = (
+				C992095212E12E77000DD89E /* Resources */,
+				C992095312E12E77000DD89E /* Sources */,
+				C992095412E12E77000DD89E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ControlT;
+			productName = ControlT;
+			productReference = C992095612E12E77000DD89E /* ControlT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C992093412E12882000DD89E /* Project object */ = {
@@ -29,12 +116,37 @@
 				German,
 			);
 			mainGroup = C992093212E12882000DD89E;
+			productRefGroup = C992095712E12E77000DD89E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				C992095512E12E77000DD89E /* ControlT */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C992095212E12E77000DD89E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C992096512E12ECA000DD89E /* Menu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C992095312E12E77000DD89E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C992097F12E12F5C000DD89E /* ControlT.m in Sources */,
+				C992098812E12FE1000DD89E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		C992093512E12882000DD89E /* Debug */ = {
@@ -51,6 +163,54 @@
 			};
 			name = Release;
 		};
+		C992095A12E12E77000DD89E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "ControlT-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ControlT;
+			};
+			name = Debug;
+		};
+		C992095B12E12E77000DD89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "ControlT-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ControlT;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -59,6 +219,15 @@
 			buildConfigurations = (
 				C992093512E12882000DD89E /* Debug */,
 				C992093612E12882000DD89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C992095C12E12E78000DD89E /* Build configuration list for PBXNativeTarget "ControlT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C992095A12E12E77000DD89E /* Debug */,
+				C992095B12E12E77000DD89E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
