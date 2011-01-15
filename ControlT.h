@@ -10,7 +10,11 @@
 
 
 @interface ControlT : NSObject <NSApplicationDelegate> {
-
+	NSStatusItem *statusItem;
+	IBOutlet NSMenu *menu;
 }
+
+- (void)addStatusItem;
+- (void)registerHotkey;
 
 @end

@@ -11,6 +11,7 @@
 		C992096512E12ECA000DD89E /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C992096412E12ECA000DD89E /* Menu.xib */; };
 		C992097F12E12F5C000DD89E /* ControlT.m in Sources */ = {isa = PBXBuildFile; fileRef = C992097E12E12F5C000DD89E /* ControlT.m */; };
 		C992098812E12FE1000DD89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C992098712E12FE1000DD89E /* main.m */; };
+		C99209BD12E17D19000DD89E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99209BC12E17D19000DD89E /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C992097D12E12F5C000DD89E /* ControlT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlT.h; sourceTree = "<group>"; };
 		C992097E12E12F5C000DD89E /* ControlT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlT.m; sourceTree = "<group>"; };
 		C992098712E12FE1000DD89E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C99209BC12E17D19000DD89E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C992095E12E12E8C000DD89E /* Cocoa.framework in Frameworks */,
+				C99209BD12E17D19000DD89E /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				C992095D12E12E8C000DD89E /* Cocoa.framework */,
+				C99209BC12E17D19000DD89E /* Carbon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
