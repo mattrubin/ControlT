@@ -1,0 +1,29 @@
+# Project-specific
+References/
+
+# Xcode noise
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pyc
+*~.nib/
+
+# OSX noise
+.DS_Store
+profile
+
+# Textmate - if you build your xcode projects with it
+*.tm_build_errors
+
+# old skool
+.svn
+
+
+# Sources:
+# https://gist.github.com/137348
+# https://github.com/rentzsch/OAuthConsumer/blob/master/.gitignore
+# http://lists.apple.com/archives/xcode-users/2006/Apr/msg00689.html
+# http://lists.apple.com/archives/xcode-users/2007/oct/msg00465.html
