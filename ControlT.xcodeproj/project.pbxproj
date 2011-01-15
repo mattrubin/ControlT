@@ -12,6 +12,7 @@
 		C992097F12E12F5C000DD89E /* ControlT.m in Sources */ = {isa = PBXBuildFile; fileRef = C992097E12E12F5C000DD89E /* ControlT.m */; };
 		C992098812E12FE1000DD89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C992098712E12FE1000DD89E /* main.m */; };
 		C99209BD12E17D19000DD89E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99209BC12E17D19000DD89E /* Carbon.framework */; };
+		C9920A1D12E18F56000DD89E /* ControlT.icns in Resources */ = {isa = PBXBuildFile; fileRef = C9920A1C12E18F56000DD89E /* ControlT.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C992097E12E12F5C000DD89E /* ControlT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlT.m; sourceTree = "<group>"; };
 		C992098712E12FE1000DD89E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C99209BC12E17D19000DD89E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		C9920A1C12E18F56000DD89E /* ControlT.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ControlT.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				C992095912E12E77000DD89E /* ControlT-Info.plist */,
 				C992096412E12ECA000DD89E /* Menu.xib */,
+				C9920A1C12E18F56000DD89E /* ControlT.icns */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C992096512E12ECA000DD89E /* Menu.xib in Resources */,
+				C9920A1D12E18F56000DD89E /* ControlT.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
