@@ -23,7 +23,6 @@
 	[statusItem setTitle:@"⌃T"];
     [statusItem setMenu:menu];
 	[statusItem setTarget:self];
-	[statusItem setDoubleAction:@selector(launchTerminal)];
 }
 
 OSStatus handleHotkey(EventHandlerCallRef nextHandler, EventRef theEvent, void *userData)
