@@ -31,35 +31,35 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	[self addStatusItem];
-	[self registerHotkey];
-	[NSApp hide:self];
+    [self addStatusItem];
+    [self registerHotkey];
+    [NSApp hide:self];
 }
 
 - (void)addStatusItem
 {
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.highlightMode = YES;
-	self.statusItem.title = @"⌃T";
+    self.statusItem.title = @"⌃T";
     self.statusItem.menu = self.menu;
 }
 
 OSStatus handleHotkey(EventHandlerCallRef nextHandler, EventRef theEvent, void *userData)
 {
-	[[NSWorkspace sharedWorkspace] launchApplication:@"Terminal.app"];
-	return noErr;
+    [[NSWorkspace sharedWorkspace] launchApplication:@"Terminal.app"];
+    return noErr;
 }
 
 - (void)registerHotkey
 {
-	EventTypeSpec eventType;
-	eventType.eventClass = kEventClassKeyboard;
-	eventType.eventKind = kEventHotKeyPressed;
-	InstallApplicationEventHandler(&handleHotkey, 1, &eventType, NULL, NULL);
+    EventTypeSpec eventType;
+    eventType.eventClass = kEventClassKeyboard;
+    eventType.eventKind = kEventHotKeyPressed;
+    InstallApplicationEventHandler(&handleHotkey, 1, &eventType, NULL, NULL);
 
-	EventHotKeyID hotkeyID;
-	EventHotKeyRef hotkeyRef;
-	RegisterEventHotKey(kVK_ANSI_T, controlKey, hotkeyID, GetApplicationEventTarget(), 0, &hotkeyRef);
+    EventHotKeyID hotkeyID;
+    EventHotKeyRef hotkeyRef;
+    RegisterEventHotKey(kVK_ANSI_T, controlKey, hotkeyID, GetApplicationEventTarget(), 0, &hotkeyRef);
 }
 
 @end
