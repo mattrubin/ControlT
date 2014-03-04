@@ -23,16 +23,6 @@
 		C9920A1C12E18F56000DD89E /* ControlT.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ControlT.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		C992095412E12E77000DD89E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
 		C992093212E12882000DD89E = {
 			isa = PBXGroup;
@@ -80,7 +70,6 @@
 			buildPhases = (
 				C992095212E12E77000DD89E /* Resources */,
 				C992095312E12E77000DD89E /* Sources */,
-				C992095412E12E77000DD89E /* Frameworks */,
 			);
 			buildRules = (
 			);
