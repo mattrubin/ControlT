@@ -18,11 +18,11 @@
 }
 
 - (void)addStatusItem {
-    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setHighlightMode:YES];
-	[statusItem setTitle:@"⌃T"];
-    [statusItem setMenu:menu];
-	[statusItem setTarget:self];
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [self.statusItem setHighlightMode:YES];
+	[self.statusItem setTitle:@"⌃T"];
+    [self.statusItem setMenu:self.menu];
+	[self.statusItem setTarget:self];
 }
 
 OSStatus handleHotkey(EventHandlerCallRef nextHandler, EventRef theEvent, void *userData)

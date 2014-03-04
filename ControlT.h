@@ -9,10 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface ControlT : NSObject <NSApplicationDelegate> {
-	NSStatusItem *statusItem;
-	IBOutlet NSMenu *menu;
-}
+@interface ControlT : NSObject <NSApplicationDelegate>
+
+@property NSStatusItem *statusItem;
+@property IBOutlet NSMenu *menu;
 
 - (void)addStatusItem;
 - (void)registerHotkey;
