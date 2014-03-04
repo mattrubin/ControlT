@@ -6,7 +6,7 @@
 //  Copyright 2011 Stanford University. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
 
 
 @interface ControlT : NSObject <NSApplicationDelegate>

@@ -7,7 +7,8 @@
 //
 
 #import "ControlT.h"
-#import <Carbon/Carbon.h>
+@import Carbon.HIToolbox;
+
 
 @implementation ControlT
 
