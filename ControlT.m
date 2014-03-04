@@ -18,7 +18,7 @@
 }
 
 - (void)addStatusItem {
-    statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setHighlightMode:YES];
 	[statusItem setTitle:@"⌃T"];
     [statusItem setMenu:menu];
