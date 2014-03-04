@@ -29,18 +29,20 @@
 
 @implementation ControlT
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
 	[self addStatusItem];
 	[self registerHotkey];
 	[NSApp hide:self];
 }
 
-- (void)addStatusItem {
+- (void)addStatusItem
+{
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [self.statusItem setHighlightMode:YES];
-	[self.statusItem setTitle:@"⌃T"];
-    [self.statusItem setMenu:self.menu];
-	[self.statusItem setTarget:self];
+    self.statusItem.highlightMode = YES;
+	self.statusItem.title = @"⌃T";
+    self.statusItem.menu = self.menu;
+	self.statusItem.target = self;
 }
 
 OSStatus handleHotkey(EventHandlerCallRef nextHandler, EventRef theEvent, void *userData)
@@ -49,17 +51,18 @@ OSStatus handleHotkey(EventHandlerCallRef nextHandler, EventRef theEvent, void *
 	return noErr;
 }
 
-- (void)registerHotkey {
+- (void)registerHotkey
+{
 	EventHotKeyRef hotkeyRef;
 	EventHotKeyID hotkeyID;
 	EventTypeSpec eventType;
-	eventType.eventClass=kEventClassKeyboard;
-	eventType.eventKind=kEventHotKeyPressed;
+	eventType.eventClass = kEventClassKeyboard;
+	eventType.eventKind = kEventHotKeyPressed;
 	
 	InstallApplicationEventHandler(&handleHotkey, 1, &eventType, NULL, NULL);
 	
-	hotkeyID.signature='htk1';
-	hotkeyID.id=1;
+	hotkeyID.signature = 'htk1';
+	hotkeyID.id = 1;
 	
 	RegisterEventHotKey(0x11, controlKey, hotkeyID, GetApplicationEventTarget(), 0, &hotkeyRef);
 }

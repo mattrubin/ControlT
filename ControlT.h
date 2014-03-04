@@ -31,7 +31,4 @@
 @property NSStatusItem *statusItem;
 @property IBOutlet NSMenu *menu;
 
-- (void)addStatusItem;
-- (void)registerHotkey;
-
 @end
