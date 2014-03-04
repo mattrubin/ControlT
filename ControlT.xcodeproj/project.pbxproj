@@ -7,23 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C992095E12E12E8C000DD89E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C992095D12E12E8C000DD89E /* Cocoa.framework */; };
 		C992096512E12ECA000DD89E /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C992096412E12ECA000DD89E /* Menu.xib */; };
 		C992097F12E12F5C000DD89E /* ControlT.m in Sources */ = {isa = PBXBuildFile; fileRef = C992097E12E12F5C000DD89E /* ControlT.m */; };
 		C992098812E12FE1000DD89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C992098712E12FE1000DD89E /* main.m */; };
-		C99209BD12E17D19000DD89E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99209BC12E17D19000DD89E /* Carbon.framework */; };
 		C9920A1D12E18F56000DD89E /* ControlT.icns in Resources */ = {isa = PBXBuildFile; fileRef = C9920A1C12E18F56000DD89E /* ControlT.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C992095612E12E77000DD89E /* ControlT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C992095912E12E77000DD89E /* ControlT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ControlT-Info.plist"; sourceTree = "<group>"; };
-		C992095D12E12E8C000DD89E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		C992096412E12ECA000DD89E /* Menu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
 		C992097D12E12F5C000DD89E /* ControlT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlT.h; sourceTree = "<group>"; };
 		C992097E12E12F5C000DD89E /* ControlT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlT.m; sourceTree = "<group>"; };
 		C992098712E12FE1000DD89E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C99209BC12E17D19000DD89E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		C9920A1C12E18F56000DD89E /* ControlT.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ControlT.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -32,8 +28,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C992095E12E12E8C000DD89E /* Cocoa.framework in Frameworks */,
-				C99209BD12E17D19000DD89E /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +39,6 @@
 			children = (
 				C992097C12E12F37000DD89E /* Classes */,
 				C992097B12E12F2D000DD89E /* Resources */,
-				C992096112E12E95000DD89E /* Frameworks */,
 				C992095712E12E77000DD89E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +49,6 @@
 				C992095612E12E77000DD89E /* ControlT.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C992096112E12E95000DD89E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C992095D12E12E8C000DD89E /* Cocoa.framework */,
-				C99209BC12E17D19000DD89E /* Carbon.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C992097B12E12F2D000DD89E /* Resources */ = {
@@ -163,6 +147,8 @@
 		C992093512E12882000DD89E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				COPY_PHASE_STRIP = NO;
 				ONLY_ACTIVE_ARCH = YES;
 			};
@@ -171,6 +157,8 @@
 		C992093612E12882000DD89E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				COPY_PHASE_STRIP = YES;
 			};
 			name = Release;
