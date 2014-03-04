@@ -42,7 +42,6 @@
     self.statusItem.highlightMode = YES;
 	self.statusItem.title = @"⌃T";
     self.statusItem.menu = self.menu;
-	self.statusItem.target = self;
 }
 
 OSStatus handleHotkey(EventHandlerCallRef nextHandler, EventRef theEvent, void *userData)
@@ -53,18 +52,14 @@ OSStatus handleHotkey(EventHandlerCallRef nextHandler, EventRef theEvent, void *
 
 - (void)registerHotkey
 {
-	EventHotKeyRef hotkeyRef;
-	EventHotKeyID hotkeyID;
 	EventTypeSpec eventType;
 	eventType.eventClass = kEventClassKeyboard;
 	eventType.eventKind = kEventHotKeyPressed;
-	
 	InstallApplicationEventHandler(&handleHotkey, 1, &eventType, NULL, NULL);
-	
-	hotkeyID.signature = 'htk1';
-	hotkeyID.id = 1;
-	
-	RegisterEventHotKey(0x11, controlKey, hotkeyID, GetApplicationEventTarget(), 0, &hotkeyRef);
+
+	EventHotKeyID hotkeyID;
+	EventHotKeyRef hotkeyRef;
+	RegisterEventHotKey(kVK_ANSI_T, controlKey, hotkeyID, GetApplicationEventTarget(), 0, &hotkeyRef);
 }
 
 @end
